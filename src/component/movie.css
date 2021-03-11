@@ -1,0 +1,15 @@
+.movie{
+    width: 45%;
+    background-color: white;
+    margin-bottom: 70px;
+}
+.movie_{
+    transition: transform 2s;
+}
+
+.movie_:hover{
+    transform: scale(1.05);
+}
+
+.title{
+}

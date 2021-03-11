@@ -1,0 +1,40 @@
+.container{
+    margin:0px auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.load_container{
+    margin:0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+    font-size: large;
+}
+.movies{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+body{
+    margin:0;
+    padding: 0;
+}
