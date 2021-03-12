@@ -18,13 +18,17 @@ function movie({id, title, year, summary, rating, cover, genres}){
         }}>
             <div className="movie">
                 <h3 className="title">{title}</h3>
-                <img className="movie_" src={cover} alt={title} />
-                <pre>{year}</pre>
-                <ul>{genres.map((data,id) =>(
-                    <li key={id}>{data}</li>
-                ))}</ul>
-                <div>
-                    {summary.slice(0,100)}...
+                <div className="movie_">
+                    <div>
+                        <img  src={cover} alt={title} />
+                        <pre>{year}</pre>
+                        <ul className="genres">{genres.map((data,id) =>(
+                            <li key={id}>{data}</li>
+                        ))}</ul>
+                    </div>
+                    <div className="summary">
+                        {summary.slice(0,300)}...
+                    </div>
                 </div>
             </div>
         </Link>
