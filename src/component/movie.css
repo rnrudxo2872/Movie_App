@@ -2,14 +2,15 @@
     width: 45%;
     background-color: white;
     margin-bottom: 70px;
-}
-.movie_{
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);;
     transition: transform 2s;
 }
-
-.movie_:hover{
-    transform: scale(1.05);
+.movie img{
+    position: relative;
 }
-
+.movie:hover{
+    transform: scale(1.03);
+}
 .title{
 }

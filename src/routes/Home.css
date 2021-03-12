@@ -17,6 +17,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+.movies a{
+    display: contents;
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo{
     display: flex;
     justify-content: center;
