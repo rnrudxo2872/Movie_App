@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 function movie({id, title, year, summary, rating, cover, genres}){
     return (
         <Link to={{
-            pathname:"/movie_detail",
+            pathname:`/movie_detail/${id}`,
             state:{
                 title,
                 year,
