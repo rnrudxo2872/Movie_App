@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import YTSearch from 'youtube-api-search'
 import './Detail.css'
 
-let API_key = "AIzaSyB2aVQcLHEhqND2x_bQhnj4sWBQN84MiJ8"
+let API_key = ""//키 보안
 
 class Detail extends Component{
   constructor(props){
