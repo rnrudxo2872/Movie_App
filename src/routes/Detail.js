@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import YTSearch from 'youtube-api-search'
+import './Detail.css'
 
 let API_key = "AIzaSyB2aVQcLHEhqND2x_bQhnj4sWBQN84MiJ8"
 
@@ -32,10 +33,11 @@ class Detail extends Component{
   render(){
     const url = `https://youtube.com/embed/${this.state.movie_trailer}`;
     return (
-      <div>
-      <div style={{marginTop:'20px'}}>
-        <iframe title={this.state.movie_trailer} src={url}></iframe>
+      <div className="detail_container">
+      <div className="trailer_">
+        <iframe className="video__" title={this.state.movie_trailer} src={url}></iframe>
       </div>
+      <input type="button" />
     </div> 
     );
   }  
